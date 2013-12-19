@@ -2,7 +2,11 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com/" />
+  <remote  name="ko"
+           fetch="git://git.kernel.org/pub/scm/" />
+  <remote  name="gc"
+           fetch="." />
   <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
            sync-j="4" />
@@ -12,7 +16,7 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+<!--  <project path="bionic" name="platform/bionic" groups="pdk" /> -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -24,8 +28,8 @@
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" />
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
-  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
+<!--  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" /> -->
+<!--  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" /> -->
   <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
   <project path="device/common" name="device/common" />
@@ -41,8 +45,8 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
+<!--  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" /> -->
+<!--  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" /> -->
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
@@ -58,7 +62,7 @@
   <project path="external/arduino" name="platform/external/arduino" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
+<!--  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" /> -->
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -410,7 +414,7 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
+<!--  <project path="system/core" name="platform/system/core" groups="pdk" /> -->
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
@@ -427,5 +431,17 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+
+  <!-- replaced -->
+  <project remote="gc" path="bionic" name="aosp-bluez.platform-bionic" groups="pdk" revision="kitkat" />
+  <project remote="gc" path="device/asus/flo" name="aosp-bluez.device-asus-flo" groups="device,flo" revision="kitkat" />
+  <project remote="gc" path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="kitkat" />
+  <project remote="gc" path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="kitkat" />
+  <project remote="gc" path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="kitkat" />
+  <project remote="gc" path="system/core" name="aosp-bluez.platform-system-core" groups="pdk" revision="kitkat" />
+
+  <!-- new -->
+  <project remote="ko" path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" />
+  <project remote="gc" path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" />
 
 </manifest>
