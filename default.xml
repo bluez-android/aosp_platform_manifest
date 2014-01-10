@@ -27,12 +27,17 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" />
+<!-- not supported
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
+-->
 <!--  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" /> -->
 <!--  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" /> -->
+<!-- not supported
   <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
+-->
   <project path="device/common" name="device/common" />
+<!-- not supported
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
@@ -45,10 +50,13 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
+-->
 <!--  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" /> -->
 <!--  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" /> -->
+<!-- not supported
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
+-->
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
