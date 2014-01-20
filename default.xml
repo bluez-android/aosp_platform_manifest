@@ -3,9 +3,9 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote  name="ko"
+  <remote  name="korg"
            fetch="git://git.kernel.org/pub/scm/" />
-  <remote  name="gc"
+  <remote  name="gcode"
            fetch="." />
   <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
@@ -441,14 +441,14 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
   <!-- replaced -->
-  <project remote="gc" path="bionic" name="aosp-bluez.platform-bionic" groups="pdk" revision="kitkat" />
-  <project remote="gc" path="device/asus/flo" name="aosp-bluez.device-asus-flo" groups="device,flo" revision="kitkat" />
-  <project remote="gc" path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="kitkat" />
-  <project remote="gc" path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="kitkat" />
-  <project remote="gc" path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="kitkat" />
+  <project remote="gcode" path="bionic" name="aosp-bluez.platform-bionic" groups="pdk" revision="kitkat" />
+  <project remote="gcode" path="device/asus/flo" name="aosp-bluez.device-asus-flo" groups="device,flo" revision="kitkat" />
+  <project remote="gcode" path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="kitkat" />
+  <project remote="gcode" path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="kitkat" />
+  <project remote="gcode" path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="kitkat" />
 
   <!-- new -->
-  <project remote="ko" path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" />
-  <project remote="gc" path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" />
+  <project remote="korg" path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" />
+  <project remote="gcode" path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" />
 
 </manifest>
