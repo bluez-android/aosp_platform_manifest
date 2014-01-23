@@ -449,6 +449,7 @@
 
   <!-- new -->
   <project remote="korg" path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" />
+  <project remote="korg" path="external/bluetooth/sbc" name="bluetooth/sbc" groups="pdk" revision="master" />
   <project remote="gcode" path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" />
 
 </manifest>
