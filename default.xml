@@ -251,7 +251,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+<!--  <project path="frameworks/base" name="platform/frameworks/base" /> -->
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -446,6 +446,7 @@
   <project remote="gcode" path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="kitkat" />
   <project remote="gcode" path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="kitkat" />
   <project remote="gcode" path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="kitkat" />
+  <project remote="gcode" path="frameworks/base" name="aosp-bluez.platform-frmwrk-base" revision="kitkat" />
 
   <!-- new -->
   <project remote="korg" path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" />
