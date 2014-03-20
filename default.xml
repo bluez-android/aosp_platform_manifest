@@ -306,7 +306,7 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
+<!--  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" /> -->
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
@@ -447,6 +447,7 @@
   <project remote="gcode" path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="kitkat" />
   <project remote="gcode" path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="kitkat" />
   <project remote="gcode" path="frameworks/base" name="aosp-bluez.platform-frmwrk-base" revision="kitkat" />
+  <project remote="gcode" path="packages/apps/Bluetooth" name="aosp-bluez.pkg-apps-bluetooth" revision="kitkat" />
 
   <!-- new -->
   <project remote="korg" path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" />
