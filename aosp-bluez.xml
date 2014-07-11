@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="korg"
+           fetch="git://git.kernel.org/pub/scm/" />
+  <remote  name="gcode"
+           fetch="." />
+
+  <!-- not supported devices -->
+  <remove-project name="device/asus/deb" />
+  <remove-project name="device/asus/grouper" />
+  <remove-project name="device/asus/tilapia" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/mips" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-mips" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/google/accessory/arduino" />
+  <remove-project name="device/google/accessory/demokit" />
+  <remove-project name="device/samsung/manta" />
+  <remove-project name="device/lge/hammerhead" />
+  <remove-project name="device/lge/hammerhead-kernel" />
+
+  <!-- replaced gits -->
+  <remove-project name="platform/bionic" />
+  <remove-project name="device/asus/flo" />
+  <remove-project name="device/asus/flo-kernel" />
+  <remove-project name="device/lge/mako" />
+  <remove-project name="device/lge/mako-kernel" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
+  <project path="bionic" name="aosp-bluez.platform-bionic" groups="pdk" revision="kitkat" remote="gcode" />
+  <project path="device/asus/flo" name="aosp-bluez.device-asus-flo" groups="device,flo" revision="kitkat" remote="gcode" />
+  <project path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="kitkat" remote="gcode" />
+  <project path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="kitkat" remote="gcode" />
+  <project path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="kitkat" remote="gcode" />
+  <project path="frameworks/base" name="aosp-bluez.platform-frmwrk-base" revision="kitkat" remote="gcode" />
+  <project path="packages/apps/Bluetooth" name="aosp-bluez.pkg-apps-bluetooth" revision="kitkat" remote="gcode" />
+
+  <!-- removed gits -->
+  <remove-project name="platform/external/bluetooth/bluedroid" />
+
+  <!-- new gits -->
+  <project path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" remote="korg" />
+  <project path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" remote="gcode" />
+  <project path="external/bluetooth/sbc" name="bluetooth/sbc" groups="pdk" revision="master" remote="korg" />
+
+</manifest>
