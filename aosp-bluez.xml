@@ -7,7 +7,6 @@
            fetch="." />
 
   <!-- not supported devices -->
-  <remove-project name="device/asus/deb" />
   <remove-project name="device/asus/grouper" />
   <remove-project name="device/asus/tilapia" />
   <remove-project name="device/generic/armv7-a-neon" />
