@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="korg"
+           fetch="git://git.kernel.org/pub/scm/" />
+  <remote  name="gcode"
+           fetch="https://code.google.com/p/" />
+
+  <!-- not supported devices -->
+  <remove-project name="device/asus/deb" />
+  <remove-project name="device/asus/fugu" />
+  <remove-project name="device/asus/grouper" />
+  <remove-project name="device/asus/tilapia" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/mips" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-mips" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/htc/flounder" />
+  <remove-project name="device/moto/shamu" />
+  <remove-project name="device/sample" />
+  <remove-project name="device/google/accessory/arduino" />
+  <remove-project name="device/google/accessory/demokit" />
+  <remove-project name="device/samsung/manta" />
+
+  <!-- replaced gits -->
+  <remove-project name="device/asus/flo" />
+  <remove-project name="device/asus/flo-kernel" />
+  <remove-project name="device/lge/hammerhead" />
+  <remove-project name="device/lge/hammerhead-kernel" />
+  <remove-project name="device/lge/mako" />
+  <remove-project name="device/lge/mako-kernel" />
+  <!-- <remove-project name="platform/frameworks/base" /> -->
+  <!-- <remove-project name="platform/packages/apps/Bluetooth" /> -->
+  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" revision="intel/android-bluez/lollipop" />
+  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" clone-depth="1" revision="intel/android-bluez/lollipop" />
+  <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" revision="intel/android-bluez/lollipop" />
+  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" clone-depth="1" revision="intel/android-bluez/lollipop" />
+  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" revision="intel/android-bluez/lollipop" />
+  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" clone-depth="1" revision="intel/android-bluez/lollipop" />
+  <!-- <project path="frameworks/base" name="platform/frameworks/base" revision="intel/android-bluez/lollipop" /> -->
+  <!-- <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" revision="intel/android-bluez/lollipop" /> -->
+
+  <!-- removed gits -->
+  <remove-project name="platform/external/bluetooth/bluedroid" />
+
+  <!-- new gits -->
+  <project path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" remote="korg" />
+  <project path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" remote="gcode" />
+  <project path="external/bluetooth/sbc" name="bluetooth/sbc" groups="pdk" revision="master" remote="korg" />
+
+</manifest>
