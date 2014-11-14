@@ -8,6 +8,7 @@
 
   <!-- not supported devices -->
   <remove-project name="device/asus/fugu" />
+  <remove-project name="device/asus/fugu-kernel" />
   <remove-project name="device/asus/grouper" />
   <remove-project name="device/asus/tilapia" />
   <remove-project name="device/generic/armv7-a-neon" />
@@ -23,7 +24,9 @@
   <remove-project name="device/generic/x86_64" />
   <remove-project name="device/google/atv" />
   <remove-project name="device/htc/flounder" />
+  <remove-project name="device/htc/flounder-kernel" />
   <remove-project name="device/moto/shamu" />
+  <remove-project name="device/moto/shamu-kernel" />
   <remove-project name="device/sample" />
   <remove-project name="device/google/accessory/arduino" />
   <remove-project name="device/google/accessory/demokit" />
