@@ -39,12 +39,14 @@
   <remove-project name="device/lge/hammerhead-kernel" />
   <remove-project name="device/lge/mako" />
   <remove-project name="device/lge/mako-kernel" />
+  <remove-project name="platform/external/sepolicy" />
   <project path="device/asus/flo" name="aosp-bluez.device-asus-flo" groups="device,flo" revision="lollipop" remote="gcode" />
   <project path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="lollipop" remote="gcode" />
   <project path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="lollipop" remote="gcode" />
   <project path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="lollipop" remote="gcode" />
   <project path="device/lge/hammerhead" name="aosp-bluez.device-lge-ham" groups="device,hammerhead" revision="lollipop" remote="gcode" />
   <project path="device/lge/hammerhead-kernel" name="aosp-bluez.device-lge-ham-kern" groups="device,hammerhead" revision="lollipop" remote="gcode" />
+  <project path="external/sepolicy" name="aosp-bluez.external-sepolicy" groups="pdk" revision="lollipop" remote="gcode" />
 
   <!-- removed gits -->
   <remove-project name="platform/external/bluetooth/bluedroid" />
