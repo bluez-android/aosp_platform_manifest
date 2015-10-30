@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="korg"
+  <remote  name="kernel_org"
            fetch="git://git.kernel.org/pub/scm/" />
-  <remote  name="gcode"
-           fetch="https://code.google.com/p/" />
+  <remote  name="github"
+           fetch="https://github.com/bluez-android/" />
 
   <!-- not supported devices -->
   <remove-project name="device/asus/fugu" />
@@ -40,20 +40,20 @@
   <remove-project name="device/lge/mako" />
   <remove-project name="device/lge/mako-kernel" />
   <remove-project name="platform/external/sepolicy" />
-  <project path="device/asus/flo" name="aosp-bluez.device-asus-flo" groups="device,flo" revision="lollipop" remote="gcode" />
-  <project path="device/asus/flo-kernel" name="aosp-bluez.device-asus-flo-kern" groups="device,flo" revision="lollipop" remote="gcode" />
-  <project path="device/lge/mako" name="aosp-bluez.device-lge-mako" groups="device,mako" revision="lollipop" remote="gcode" />
-  <project path="device/lge/mako-kernel" name="aosp-bluez.device-lge-mako-kern" groups="device,mako" revision="lollipop" remote="gcode" />
-  <project path="device/lge/hammerhead" name="aosp-bluez.device-lge-ham" groups="device,hammerhead" revision="lollipop" remote="gcode" />
-  <project path="device/lge/hammerhead-kernel" name="aosp-bluez.device-lge-ham-kern" groups="device,hammerhead" revision="lollipop" remote="gcode" />
-  <project path="external/sepolicy" name="aosp-bluez.external-sepolicy" groups="pdk" revision="lollipop" remote="gcode" />
+  <project path="device/asus/flo" name="aosp_device_asus_flo" groups="device,flo" revision="lollipop" remote="github" />
+  <project path="device/asus/flo-kernel" name="aosp_device_asus_flo-kernel" groups="device,flo" revision="lollipop" remote="github" />
+  <project path="device/lge/mako" name="aosp_device_lge_mako" groups="device,mako" revision="lollipop" remote="github" />
+  <project path="device/lge/mako-kernel" name="aosp_device_lge_mako-kernel" groups="device,mako" revision="lollipop" remote="github" />
+  <project path="device/lge/hammerhead" name="aosp_device_lge_hammerhead" groups="device,hammerhead" revision="lollipop" remote="github" />
+  <project path="device/lge/hammerhead-kernel" name="aosp_device_lge_hammerhead-kernel" groups="device,hammerhead" revision="lollipop" remote="github" />
+  <project path="external/sepolicy" name="aosp_platform_external_sepolicy" groups="pdk" revision="lollipop" remote="github" />
 
   <!-- removed gits -->
   <remove-project name="platform/external/bluetooth/bluedroid" />
 
   <!-- new gits -->
-  <project path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" remote="korg" />
-  <project path="external/bluetooth/glib" name="aosp-bluez.glib" groups="pdk" revision="master" remote="gcode" />
-  <project path="external/bluetooth/sbc" name="bluetooth/sbc" groups="pdk" revision="master" remote="korg" />
+  <project path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" remote="kernel_org" />
+  <project path="external/bluetooth/glib" name="glib" groups="pdk" revision="master" remote="github" />
+  <project path="external/bluetooth/sbc" name="bluetooth/sbc" groups="pdk" revision="master" remote="kernel_org" />
 
 </manifest>
