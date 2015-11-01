@@ -433,7 +433,7 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-  <!-- changes required for aosp-bluez -->
-  <include name="aosp-bluez.xml" />
+  <!-- changes required for bluez-android -->
+  <include name="bluez-android.xml" />
 
 </manifest>

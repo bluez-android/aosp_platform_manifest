@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="kernel_org"
+           fetch="git://git.kernel.org/pub/scm/" />
+  <remote  name="github"
+           fetch="https://github.com/bluez-android/" />
+
+  <!-- not supported devices -->
+  <remove-project name="device/asus/grouper" />
+  <remove-project name="device/asus/tilapia" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/mips" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-mips" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/google/accessory/arduino" />
+  <remove-project name="device/google/accessory/demokit" />
+  <remove-project name="device/samsung/manta" />
+
+  <!-- replaced gits -->
+  <remove-project name="platform/bionic" />
+  <remove-project name="device/asus/flo" />
+  <remove-project name="device/asus/flo-kernel" />
+  <remove-project name="device/lge/mako" />
+  <remove-project name="device/lge/mako-kernel" />
+  <remove-project name="device/lge/hammerhead" />
+  <remove-project name="device/lge/hammerhead-kernel" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
+  <project path="bionic" name="aosp_platform_bionic" groups="pdk" revision="kitkat" remote="github" />
+  <project path="device/asus/flo" name="aosp_device_asus_flo" groups="device,flo" revision="kitkat" remote="github" />
+  <project path="device/asus/flo-kernel" name="aosp_device_asus_flo-kernel" groups="device,flo" revision="kitkat" remote="github" />
+  <project path="device/lge/mako" name="aosp_device_lge_mako" groups="device,mako" revision="kitkat" remote="github" />
+  <project path="device/lge/mako-kernel" name="aosp_device_lge_mako-kernel" groups="device,mako" revision="kitkat" remote="github" />
+  <project path="device/lge/hammerhead" name="aosp_device_lge_hammerhead" groups="device,hammerhead" revision="kitkat" remote="github" />
+  <project path="device/lge/hammerhead-kernel" name="aosp_device_lge_hammerhead-kernel" groups="device,hammerhead" revision="kitkat" remote="github" />
+  <project path="frameworks/base" name="aosp_platform_frameworks_base" revision="kitkat" remote="github" />
+  <project path="packages/apps/Bluetooth" name="aosp_platform_packages_apps_Bluetooth" revision="kitkat" remote="github" />
+
+  <!-- removed gits -->
+  <remove-project name="platform/external/bluetooth/bluedroid" />
+
+  <!-- new gits -->
+  <project path="external/bluetooth/bluez" name="bluetooth/bluez" groups="pdk" revision="master" remote="kernel_org" />
+  <project path="external/bluetooth/glib" name="glib" groups="pdk" revision="master" remote="github" />
+  <project path="external/bluetooth/sbc" name="bluetooth/sbc" groups="pdk" revision="master" remote="kernel_org" />
+
+</manifest>
